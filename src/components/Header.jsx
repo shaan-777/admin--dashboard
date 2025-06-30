@@ -1,4 +1,19 @@
 // import React from 'react'
+<<<<<<< HEAD
+=======
+
+// const Header = () => {
+//   return (
+//     <h2 className="text-3xl font-bold text-purple-800 mb-8">Admin Dashboard</h2>
+//   )
+// }
+
+// export default Header
+
+
+
+import React from 'react'
+>>>>>>> 9432315becf677a42b7d2a4437702ec822022735
 
 // const Header = () => {
 //   return (
@@ -12,6 +27,7 @@ import { Menu } from 'lucide-react'
 
 const Header = ({ onMenuClick }) => {
   return (
+<<<<<<< HEAD
     <div className="flex items-center justify-between mb-6 sm:mb-8">
       {/* Hamburger Icon - Visible only on small screens */}
       <button
@@ -30,6 +46,11 @@ const Header = ({ onMenuClick }) => {
       {/* Right side spacer for alignment */}
       <div className="w-7 h-7 md:hidden" />
     </div>
+=======
+    <h2 className="text-2xl sm:text-3xl font-bold text-purple-800 mb-6 sm:mb-8">
+      Admin Dashboard
+    </h2>
+>>>>>>> 9432315becf677a42b7d2a4437702ec822022735
   )
 }
 

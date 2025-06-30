@@ -17,11 +17,19 @@ import React from 'react'
 
 const StatsCards = ({ stats }) => {
   return (
+<<<<<<< HEAD
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-10 md:mb-12 px-2 sm:px-0">
       {stats.map((stat, index) => (
         <div
           key={index}
           className={`${stat.color} rounded-xl p-4 sm:p-6 text-white`}
+=======
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
+      {stats.map((stat, index) => (
+        <div
+          key={index}
+          className={`${stat.color} rounded-xl p-4 sm:p-6 text-white shadow-md`}
+>>>>>>> 9432315becf677a42b7d2a4437702ec822022735
         >
           <h3 className="text-base sm:text-lg font-medium mb-1 sm:mb-2">
             {stat.title}

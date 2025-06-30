@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // // // // src/components/AdminDashboard.jsx
 // // // // ====================
 // // // import React, { useState } from 'react'
@@ -245,15 +246,31 @@ import { sidebarItems, statsData } from '../data/dashboardData'
 const AdminDashboard = () => {
   const [activeTab, setActiveTab] = useState('dashboard')
   const [sidebarOpen, setSidebarOpen] = useState(false)
+=======
+import React, { useState } from 'react';
+import Sidebar from './Sidebar';
+import Header from './Header';
+import StatsCards from './StatsCards';
+import UsersTable from './UsersTable';
+import PaymentsTable from './PaymentsTable';
+import ApplicationsTable from './ApplicationsTable';
+import { sidebarItems, statsData } from '../data/dashboardData';
+
+const AdminDashboard = () => {
+  const [activeTab, setActiveTab] = useState('dashboard');
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // 👈 New state
+
+  const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen); // 👈 Toggle handler
+>>>>>>> 9432315becf677a42b7d2a4437702ec822022735
 
   const renderContent = () => {
     switch (activeTab) {
       case 'users':
-        return <UsersTable />
+        return <UsersTable />;
       case 'payments':
-        return <PaymentsTable />
+        return <PaymentsTable />;
       case 'applications':
-        return <ApplicationsTable />
+        return <ApplicationsTable />;
       default:
         return (
           <>
@@ -262,11 +279,12 @@ const AdminDashboard = () => {
             <PaymentsTable />
             <ApplicationsTable />
           </>
-        )
+        );
     }
-  }
+  };
 
   return (
+<<<<<<< HEAD
     <div className="h-screen flex flex-col md:flex-row overflow-hidden relative bg-gray-100">
       
       {/* Sidebar */}
@@ -294,11 +312,37 @@ const AdminDashboard = () => {
       <div className="flex-1 overflow-y-auto z-10">
         <div className="p-4 sm:p-6 md:p-8">
           <Header onMenuClick={() => setSidebarOpen(true)} />
+=======
+    <div className="flex h-screen bg-gray-100 overflow-hidden">
+      {/* Sidebar with responsive props */}
+      <Sidebar
+        items={sidebarItems}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        isOpen={isSidebarOpen}           // 👈 passed to Sidebar
+        toggleSidebar={toggleSidebar}    // 👈 passed to Sidebar
+      />
+
+      <div className="flex-1 overflow-auto">
+        {/* Mobile-only toggle button */}
+        <div className="p-4 bg-white shadow-md lg:hidden">
+          <button onClick={toggleSidebar} className="text-purple-800 text-2xl">
+            ☰
+          </button>
+        </div>
+
+        <div className="p-8">
+          <Header />
+>>>>>>> 9432315becf677a42b7d2a4437702ec822022735
           {renderContent()}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
+<<<<<<< HEAD
 export default AdminDashboard
+=======
+export default AdminDashboard;
+>>>>>>> 9432315becf677a42b7d2a4437702ec822022735

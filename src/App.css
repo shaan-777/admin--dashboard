@@ -1,9 +1,57 @@
 /* .App {
   height: 100vh;
 } */
+<<<<<<< HEAD
  /* Better handling for mobile viewports */
 .App {
   min-height: 100dvh; /* modern units that consider browser bars */
   display: flex;
   flex-direction: column;
+=======
+
+/* Base App container */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb; /* light mode bg */
+  color: #111827; /* light mode text */
+}
+
+/* Dark mode support (if using Tailwind's class-based dark mode) */
+.dark .App {
+  background-color: #1f2937; /* dark bg */
+  color: #f3f4f6; /* dark text */
+}
+
+/* Smooth scrolling for all pages */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset and layout helpers */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Prevent content from being cut off */
+main {
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+/* Scrollbar styling (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 116, 139, 0.5); /* slate-500/50 */
+  border-radius: 4px;
+>>>>>>> 9432315becf677a42b7d2a4437702ec822022735
 }

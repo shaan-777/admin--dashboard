@@ -1,0 +1,350 @@
+/* Component-specific styles */
+
+/* Sidebar Component */
+.sidebar {
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-item {
+  @apply flex items-center px-4 py-3 mt-2 text-sm font-medium rounded-lg transition-colors duration-200 text-left w-full;
+}
+
+.sidebar-item:hover {
+  @apply bg-purple-600 text-white;
+}
+
+.sidebar-item.active {
+  @apply bg-purple-600 text-white;
+}
+
+.sidebar-item.inactive {
+  @apply text-purple-200;
+}
+
+/* Stats Card Component */
+.stats-card {
+  @apply rounded-lg shadow-sm p-6 text-white transition-transform duration-200;
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+}
+
+.stats-card.blue {
+  @apply bg-blue-500;
+}
+
+.stats-card.green {
+  @apply bg-green-500;
+}
+
+.stats-card.yellow {
+  @apply bg-yellow-500;
+}
+
+.stats-card.red {
+  @apply bg-red-500;
+}
+
+.stats-card.purple {
+  @apply bg-purple-500;
+}
+
+/* Status Badge Component */
+.status-badge {
+  @apply inline-flex px-2 py-1 text-xs font-semibold rounded-full;
+}
+
+.status-badge.approved {
+  @apply bg-green-100 text-green-800;
+}
+
+.status-badge.pending {
+  @apply bg-red-100 text-red-800;
+}
+
+.status-badge.under-review {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.status-badge.completed {
+  @apply bg-green-100 text-green-800;
+}
+
+.status-badge.processing {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.status-badge.paid {
+  @apply bg-green-100 text-green-800;
+}
+
+/* Table Component */
+.table-container {
+  @apply bg-white rounded-lg shadow-sm overflow-hidden;
+}
+
+.table-header {
+  @apply p-4 border-b border-gray-200;
+}
+
+.table-row {
+  @apply hover:bg-gray-50 transition-colors duration-150;
+}
+
+.table-cell {
+  @apply px-6 py-4 whitespace-nowrap text-sm;
+}
+
+.table-cell.header {
+  @apply text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.table-cell.body {
+  @apply text-gray-900;
+}
+
+.table-cell.secondary {
+  @apply text-gray-500;
+}
+
+/* Card Component */
+.card {
+  @apply bg-white rounded-lg shadow-sm p-6;
+}
+
+.card-header {
+  @apply flex justify-between items-center mb-4;
+}
+
+.card-title {
+  @apply text-lg font-semibold text-purple-700;
+}
+
+.card-content {
+  @apply space-y-3;
+}
+
+/* Mobile Card Component */
+.mobile-card {
+  @apply p-4 border-b border-gray-200 last:border-b-0;
+}
+
+.mobile-card-header {
+  @apply flex justify-between items-start mb-3;
+}
+
+.mobile-card-content {
+  @apply space-y-3;
+}
+
+.mobile-card-actions {
+  @apply flex space-x-2;
+}
+
+/* Button Components */
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+  @apply bg-purple-600 text-white hover:bg-purple-700 focus:ring-purple-500;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300 focus:ring-gray-500;
+}
+
+.btn-success {
+  @apply bg-green-600 text-white hover:bg-green-700 focus:ring-green-500;
+}
+
+.btn-danger {
+  @apply bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+}
+
+.btn-sm {
+  @apply px-3 py-1.5 text-sm;
+}
+
+.btn-lg {
+  @apply px-6 py-3 text-lg;
+}
+
+/* Icon Button */
+.icon-btn {
+  @apply p-2 rounded-md hover:bg-gray-100 transition-colors duration-200;
+}
+
+.icon-btn.blue {
+  @apply text-blue-600 hover:text-blue-800 hover:bg-blue-50;
+}
+
+.icon-btn.red {
+  @apply text-red-600 hover:text-red-800 hover:bg-red-50;
+}
+
+.icon-btn.green {
+  @apply text-green-600 hover:text-green-800 hover:bg-green-50;
+}
+
+/* Form Components */
+.form-input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent;
+}
+
+.form-select {
+  @apply px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent;
+}
+
+.search-input {
+  @apply w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent;
+}
+
+/* Search Component */
+.search-container {
+  @apply flex-1 relative;
+}
+
+.search-icon {
+  @apply w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400;
+}
+
+/* Filter Components */
+.filter-container {
+  @apply flex flex-col sm:flex-row gap-4;
+}
+
+.filter-button {
+  @apply flex items-center px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200;
+}
+
+/* Action Buttons */
+.action-buttons {
+  @apply flex space-x-2;
+}
+
+.action-btn {
+  @apply p-1 rounded hover:bg-gray-100 transition-colors duration-200;
+}
+
+/* Header Component */
+.header {
+  @apply bg-white shadow-sm;
+}
+
+.header-content {
+  @apply flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8;
+}
+
+.header-title {
+  @apply text-xl sm:text-2xl font-bold text-purple-700;
+}
+
+/* Layout Components */
+.layout-container {
+  @apply min-h-screen bg-gray-100 flex;
+}
+
+.main-content {
+  @apply flex-1 flex flex-col overflow-hidden;
+}
+
+.content-area {
+  @apply flex-1 overflow-x-hidden overflow-y-auto p-4 sm:p-6 lg:p-8;
+}
+
+/* Mobile Sidebar Overlay */
+.sidebar-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden;
+}
+
+/* Responsive Grid */
+.stats-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8;
+}
+
+.overview-grid {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8;
+}
+
+/* Loading States */
+.loading-container {
+  @apply flex items-center justify-center py-8;
+}
+
+.loading-text {
+  @apply ml-2 text-gray-500;
+}
+
+/* Empty States */
+.empty-state {
+  @apply text-center py-8;
+}
+
+.empty-state-icon {
+  @apply w-12 h-12 mx-auto text-gray-400 mb-4;
+}
+
+.empty-state-title {
+  @apply text-lg font-medium text-gray-900 mb-2;
+}
+
+.empty-state-description {
+  @apply text-gray-500;
+}
+
+/* Responsive Text */
+.responsive-text-sm {
+  @apply text-sm sm:text-base;
+}
+
+.responsive-text-lg {
+  @apply text-lg sm:text-xl;
+}
+
+.responsive-text-xl {
+  @apply text-xl sm:text-2xl;
+}
+
+/* Hover Effects */
+.hover-lift {
+  @apply transition-transform duration-200;
+}
+
+.hover-lift:hover {
+  transform: translateY(-1px);
+}
+
+/* Shadow Effects */
+.shadow-soft {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.shadow-medium {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Custom Scrollbar for specific components */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
