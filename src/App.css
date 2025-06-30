@@ -1,3 +1,9 @@
-.App {
+/* .App {
   height: 100vh;
+} */
+ /* Better handling for mobile viewports */
+.App {
+  min-height: 100dvh; /* modern units that consider browser bars */
+  display: flex;
+  flex-direction: column;
 }
