@@ -3,13 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "@tailwindcss/vite": "^4.1.10",
     "lucide-react": "^0.525.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.10"
-=======
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -42,7 +40,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
->>>>>>> 9432315becf677a42b7d2a4437702ec822022735
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
